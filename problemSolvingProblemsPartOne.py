@@ -75,3 +75,24 @@ def compact_string(string):
 
 compacted_string = compact_string(input('Input string to be compacted: '))
 print(compacted_string)
+
+#BONUS
+#Task : Palindrome
+# A word, phrase, or sequence that reads the same backwards as forward i.e. madam.
+#Write code that takes a user input and checks to see if it is a Palindrome and reports the result.
+#1. Declare a function to check for palindrome.
+#2. Set one parameter to string.
+#3. Inside the scope of the function set a variable to store the reversed string by slicing.
+# 4. Below set an if statment to check if the reversed string == the original.
+# 5. If it does == the original return 'This is a palindrome!'
+# 6. Else return 'This is NOT a palindrome ):
+def check_for_palindrome(string):
+    reversed_string = string[::-1]
+    if string == reversed_string:
+        return 'This is a palindrome!'
+    else:
+        return 'This is NOT a palindrome ):'
+    
+
+is_palindrome = check_for_palindrome(input('Input word to see if it is a palindrome: '))
+print(is_palindrome)
